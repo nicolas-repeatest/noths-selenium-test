@@ -10,7 +10,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		features = "classpath:features",
 		plugin = {"pretty", "html:target/cucumber-html-report","json:target/cucumber-json-report/cucumber.json"},
-		tags = {}
+		tags = {"@wip"}
 		)
 public class RunCukesTest{
 	

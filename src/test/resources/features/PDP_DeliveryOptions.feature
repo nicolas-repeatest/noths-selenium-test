@@ -3,6 +3,7 @@ Feature: PDP - Delivery Options
 	I want to see the delivery information of the product page 
 	So that I know when to order the product to get it as soon as possible 
 
+    @wip
     Scenario: PDP - Mainland UK Delivery Option
     	Given "product1" has mainland UK delivery option
     	When I navigate to the product detail page of "product1"
