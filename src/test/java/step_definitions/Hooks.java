@@ -1,7 +1,10 @@
 package step_definitions;
 
 import java.net.MalformedURLException;
+import java.util.HashMap;
+import java.util.List;
 
+import helpers.DataHelper;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -14,7 +17,12 @@ import cucumber.api.java.Before;
 
 public class Hooks{
     public static WebDriver driver;
+    public static List<HashMap<String,String>> datamap;
 
+    public Hooks()
+    {
+        datamap = DataHelper.data();
+    }
     
     @Before
     /**
@@ -26,6 +34,8 @@ public class Hooks{
     	driver = new ChromeDriver();
     	driver.manage().deleteAllCookies();
     	driver.manage().window().maximize();
+
+    	driver.navigate().to(datamap.get(0).get("environment"));
     }
 
      
