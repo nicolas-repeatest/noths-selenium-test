@@ -2,7 +2,6 @@ package modules;
 
 import org.openqa.selenium.WebDriver;
 import pageobjects.ProductListingPage;
-
 import static org.testng.Assert.assertEquals;
 
 public class VerifyProductsFilterAction {

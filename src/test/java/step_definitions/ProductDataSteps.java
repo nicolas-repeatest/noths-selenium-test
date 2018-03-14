@@ -1,13 +1,10 @@
 package step_definitions;
 
-import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
-import helpers.DataHelper;
 import org.openqa.selenium.WebDriver;
 
 import java.util.HashMap;
 import java.util.List;
-
 
 public class ProductDataSteps {
     public WebDriver driver;

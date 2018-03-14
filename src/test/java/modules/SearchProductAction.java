@@ -2,10 +2,7 @@ package modules;
 
 import helpers.Log;
 import org.openqa.selenium.WebDriver;
-import org.testng.Reporter;
 import pageobjects.HomePage;
-import pageobjects.LoginPage;
-
 import java.util.HashMap;
 import java.util.List;
 

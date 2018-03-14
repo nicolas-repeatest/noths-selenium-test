@@ -1,7 +1,6 @@
 package modules;
 
 import org.openqa.selenium.WebDriver;
-
 import java.util.HashMap;
 import java.util.List;
 
