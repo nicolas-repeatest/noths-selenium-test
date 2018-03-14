@@ -1,4 +1,4 @@
-@wip
+@devComplete
 Feature: PDP - Delivery Options
 	As a Customer
 	I want to see the delivery information of the product page 

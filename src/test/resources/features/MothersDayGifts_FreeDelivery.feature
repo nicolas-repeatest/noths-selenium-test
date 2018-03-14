@@ -3,7 +3,8 @@ Feature: Mother's Day Gifts - Free Delivery
 	I want to be able to find some "MOTHER'S DAY GIFTS" which offers free delivery 
     So that I can purchase one of them
 
-    Scenario: Mother's Day Filter - Default Delivery Filter
+    @wip
+	Scenario: Mother's Day Filter - Default Delivery Filter
         When I navigate to the Mother's Day Gifts page
         Then the Mother's Day Gifts page is displayed
         And the page is not refine by "free delivery to mainland UK"
