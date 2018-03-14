@@ -42,6 +42,11 @@ public class ProductDetailSteps {
         assertEquals(ProductDetailPage.product.isDisplayed(), true);
     }
 
+    @Then("^the free UK delivery option is displayed$")
+    public void the_free_UK_delivery_option_is_displayed() throws Throwable {
+        the_mainland_UK_delivery_option_is_displayed();
+    }
+
     @Then("^the mainland UK delivery option is displayed$")
     public void the_mainland_UK_delivery_option_is_displayed() throws Throwable {
         String value = ProductDetailPage.free_uk_delivery.getText();

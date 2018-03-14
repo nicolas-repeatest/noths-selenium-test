@@ -14,9 +14,19 @@ public class ProductListingPage extends BaseClass{
 	public ProductListingPage(WebDriver driver){
 		super(driver);
 	}
-	
+
+	// Mother's Day Page
+
 	@FindBy(how=How.CLASS_NAME, using="best-mothers-day-gifts_category")
 	public static WebElement mothers_day_gifts_category;
+
+	// Pagination
+
+	public static WebElement page_link(String pageName) {
+		return driver.findElement(By.xpath("//*[@class='pagination_index']//a[text()='" + pageName + "']"));
+	}
+
+	// Filters
 
 	@FindBy(how=How.CLASS_NAME, using="flyout_button")
 	public static WebElement sort_refine_button;
@@ -24,6 +34,8 @@ public class ProductListingPage extends BaseClass{
 	public static WebElement filter(String filterName ) {
 		return driver.findElement(By.xpath("//*[@data-tracking-id='" + filterName + "']"));
 	}
+
+	// Product Cells
 
 	@FindBy(how=How.CSS, using=".product_grid_cell_module.cell")
 	private static List<WebElement> cells;
