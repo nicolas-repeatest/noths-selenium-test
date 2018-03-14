@@ -44,21 +44,16 @@ public class ProductDetailSteps {
 
     @Then("^the free UK delivery option is displayed$")
     public void the_free_UK_delivery_option_is_displayed() throws Throwable {
-        the_mainland_UK_delivery_option_is_displayed();
-    }
-
-    @Then("^the mainland UK delivery option is displayed$")
-    public void the_mainland_UK_delivery_option_is_displayed() throws Throwable {
         String value = ProductDetailPage.free_uk_delivery.getText();
         assertNotSame(value,"");
-        Log.info("the mainland UK delivery option is displayed: " + value);
+        Log.info("the free UK delivery option is displayed: " + value);
     }
 
-    @Then("^the mainland UK delivery date is displayed$")
-    public void the_mainland_UK_delivery_date_is_displayed() throws Throwable {
+    @Then("^the free UK delivery date is displayed$")
+    public void the_free_UK_delivery_date_is_displayed() throws Throwable {
         String value = ProductDetailPage.free_uk_delivery_date.getText();
         assertNotSame(value,"");
-        Log.info("the mainland UK delivery date is displayed: " + value);
+        Log.info("the free UK delivery date is displayed: " + value);
     }
 
     @Then("^the tracked two day delivery option is displayed$")

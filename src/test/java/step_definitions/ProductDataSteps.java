@@ -19,7 +19,7 @@ public class ProductDataSteps {
      	datamap = Hooks.datamap;
     }
 
-    @Given("^\"(product.*)\" has (mainland UK|tracked two day|saturday|international) delivery option$")
+    @Given("^\"(product.*)\" has (free UK|tracked two day|saturday|international) delivery option$")
     public void has_mainland_UK_delivery_option(String productKey, String deliveryOption) throws Throwable {
         // TODO: Retrieve a specific product depending on the data constraints instead of default product
         String productId = datamap.get(0).get("default_product");
