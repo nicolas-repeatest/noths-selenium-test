@@ -3,6 +3,7 @@ package step_definitions;
 import java.net.MalformedURLException;
 import java.util.HashMap;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import helpers.DataHelper;
 import org.openqa.selenium.OutputType;
@@ -34,6 +35,7 @@ public class Hooks{
     	driver = new ChromeDriver();
     	driver.manage().deleteAllCookies();
     	driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
     	driver.navigate().to(datamap.get(0).get("environment"));
     }
