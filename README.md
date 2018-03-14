@@ -21,7 +21,7 @@ I have had the time to implement only scenarios on the Product Detail page and s
 
 Those tests are running only on Chrome on desktop in sequence. This framework could be extended to run several suite in parallel on different browser using Selenium Grid.
 
-You can find the test execution report in /cucumber-html-report.
+You can find the test execution report in /docs/cucumber-html-report.
 
 ## 2. Framework
 You can find more information about this framework on seleniumframework.com.
