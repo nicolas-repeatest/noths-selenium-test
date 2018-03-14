@@ -1,9 +1,9 @@
+@wip
 Feature: PDP - Delivery Options
 	As a Customer
 	I want to see the delivery information of the product page 
 	So that I know when to order the product to get it as soon as possible 
 
-    @wip
     Scenario: PDP - Mainland UK Delivery Option
     	Given "product1" has mainland UK delivery option
     	When I navigate to the product detail page of "product1"
@@ -24,7 +24,6 @@ Feature: PDP - Delivery Options
     	Then the product detail page is displayed
     	And the saturday delivery option is displayed
     	And the saturday delivery date is displayed
-
 
     Scenario: PDP - International Delivery Option
     	Given "product1" has international delivery option

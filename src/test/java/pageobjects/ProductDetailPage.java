@@ -20,13 +20,13 @@ public class ProductDetailPage extends BaseClass{
 	@FindBy(how=How.CSS, using=".delivery_message_free .estimated_delivery_date")
 	public static WebElement free_uk_delivery_date;
 
-	@FindBy(how=How.NAME, using="delivery_message_express_24")
+	@FindBy(how=How.CLASS_NAME, using="delivery_message_express_24")
 	public static WebElement express_delivery;
 
 	@FindBy(how=How.CSS, using=".delivery_message_express_24 .estimated_delivery_date")
 	public static WebElement express_delivery_date;
 	
-	@FindBy(how=How.NAME, using="delivery_message_saturday")
+	@FindBy(how=How.CLASS_NAME, using="delivery_message_saturday")
 	public static WebElement saturday_delivery;
 
 	@FindBy(how=How.CSS, using=".delivery_message_saturday .estimated_delivery_date")

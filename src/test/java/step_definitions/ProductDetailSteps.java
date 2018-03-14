@@ -55,4 +55,39 @@ public class ProductDetailSteps {
         assertNotSame(value,"");
         Log.info("the mainland UK delivery date is displayed: " + value);
     }
+
+    @Then("^the tracked two day delivery option is displayed$")
+    public void the_tracked_two_day_delivery_option_is_displayed() throws Throwable {
+        String value = ProductDetailPage.express_delivery.getText();
+        assertNotSame(value,"");
+        Log.info("the express delivery option is displayed: " + value);
+    }
+
+    @Then("^the tracked two day delivery date is displayed$")
+    public void the_tracked_two_day_delivery_date_is_displayed() throws Throwable {
+        String value = ProductDetailPage.express_delivery_date.getText();
+        assertNotSame(value,"");
+        Log.info("the tracked two day delivery date is displayed: " + value);
+    }
+
+    @Then("^the saturday delivery option is displayed$")
+    public void the_saturday_delivery_option_is_displayed() throws Throwable {
+        String value = ProductDetailPage.saturday_delivery.getText();
+        assertNotSame(value,"");
+        Log.info("the saturday delivery option is displayed: " + value);
+    }
+
+    @Then("^the saturday delivery date is displayed$")
+    public void the_saturday_delivery_date_is_displayed() throws Throwable {
+        String value = ProductDetailPage.saturday_delivery_date.getText();
+        assertNotSame(value,"");
+        Log.info("the saturday delivery date is displayed: " + value);
+    }
+
+    @Then("^the international delivery option is displayed$")
+    public void the_international_delivery_option_is_displayed() throws Throwable {
+        String value = ProductDetailPage.international_delivery.getText();
+        assertNotSame(value,"");
+        Log.info("the international delivery option is displayed: " + value);
+    }
 }
